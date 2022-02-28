@@ -1,5 +1,9 @@
 from .pp_functions import get_account, get_contract
 from brownie import AAToken, TokenFarm, config, network
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 # PARAMETERS
 KEPT_BALANCE = 2780400000000000000000000000 * 0.51  # keep 51% of the tokens
